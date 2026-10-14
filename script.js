@@ -6,6 +6,7 @@ function createGrid(num) {
     for (let row = 0; row < num; row++) {
         let gridDiv = document.createElement('div');
         container.appendChild(gridDiv);
+        console.log(container);
     }
     
     for (let column = 0; column < num; column++) {
