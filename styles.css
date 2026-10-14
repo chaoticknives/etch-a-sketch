@@ -1,13 +1,16 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
-    height: 250px;
+    /* width: 250px;
+    height: 250px; */
 
     border: solid red 1px; 
+    background-color: gray
 }
 
 div {
+    display: flex;
+    flex-wrap: wrap;
     border: solid blue 1px;
     width: 250px;
     height: 250px;
