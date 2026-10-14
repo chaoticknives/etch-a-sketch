@@ -7,14 +7,12 @@ function createGrid(num) {
         let gridDiv = document.createElement('div');
         gridDiv.classList.add("grid")
         container.appendChild(gridDiv);
-        console.log(gridDiv.parentElement);
     }
     
     for (let column = 0; column < num; column++) {
         let gridDiv = document.createElement('div');
         gridDiv.classList.add("grid")
         container.appendChild(gridDiv);
-        console.log(gridDiv.parentElement);
     }
 }
 
