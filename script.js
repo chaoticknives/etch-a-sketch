@@ -5,13 +5,16 @@ function createGrid(num) {
     //container.appendChild(gridDiv);
     for (let row = 0; row < num; row++) {
         let gridDiv = document.createElement('div');
+        gridDiv.classList.add("grid")
         container.appendChild(gridDiv);
-        console.log(container);
+        console.log(gridDiv.parentElement);
     }
     
     for (let column = 0; column < num; column++) {
         let gridDiv = document.createElement('div');
+        gridDiv.classList.add("grid")
         container.appendChild(gridDiv);
+        console.log(gridDiv.parentElement);
     }
 }
 

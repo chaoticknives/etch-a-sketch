@@ -1,13 +1,14 @@
-/* * {
-    border: red 1px solid;
-} */
-
-.container {
-    background-color: gray;
+body{
+    background-color: #1E1E1E;
 }
 
-div {
-    height: 250px;
-    width: 250px;
-    border: blue 1px solid;
+h1 {
+    color: #F5F5F5;
+    text-align: center;
 }
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
