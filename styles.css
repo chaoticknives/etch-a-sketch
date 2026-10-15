@@ -5,6 +5,13 @@ body{
 h1 {
     color: #F5F5F5;
     text-align: center;
+    font-size: 52px;
+}
+
+p {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 64;
 }
 
 button {
