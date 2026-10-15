@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const resetGrid = document.querySelector(".resetGrid");
 
 function createGrid(num) {
     for (let row = 0; row < num; row++) {
@@ -18,5 +19,7 @@ container.addEventListener('mouseover', colorHover);
 function colorHover (e) {
     e.target.style.background = "red";
 }
+
+
 
 createGrid(16);
