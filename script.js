@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-const resetBtn = document.querySelector(".resetGrid");
+const resetBtn = document.querySelector(".resetBtn");
 
 window.onload = createGrid(16);
 
@@ -20,4 +20,23 @@ container.addEventListener('mouseover', colorHover);
 
 function colorHover (e) {
     e.target.style.background = "red";
+}
+
+resetBtn.addEventListener('click', resetGrid);
+
+function resetGrid (e) {
+    let userGrid = prompt("Please enter a number between 1 and 100.");
+
+    if (userGrid >= 1 && userGrid <= 100) {
+        clearGrid(container);
+        createGrid(userGrid);
+    } else {
+        alert ("Please enter a number between 1 and 100."); 
+    }
+};
+
+function clearGrid(parent) {
+    while(parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
 }
