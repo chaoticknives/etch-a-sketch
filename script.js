@@ -13,4 +13,10 @@ function createGrid(num) {
     }
 }
 
+container.addEventListener('mouseover', colorHover);
+
+function colorHover (e) {
+    e.target.style.background = "red";
+}
+
 createGrid(16);

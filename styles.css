@@ -21,20 +21,18 @@ button {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
+    flex-flow: row wrap;
+    align-items: stretch;
 	margin: 50px auto;
     height: 960px;
     width: 960px;
-    bottom: 20px;
     background-color: red;
 }
 
 .grid {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 100px;
+    min-height: 100px;
 	outline: 1px solid;
     background-color: white;
-    flex: auto;
-
+    flex: 1 0;
 }
