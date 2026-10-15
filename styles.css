@@ -22,7 +22,6 @@ button {
 .container {
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
 	margin: 50px auto;
     height: 960px;
     width: 960px;
@@ -30,9 +29,7 @@ button {
 }
 
 .grid {
-    min-width: 100px;
-    min-height: 100px;
 	outline: 1px solid;
     background-color: white;
-    flex: 1 0;
+    flex-grow: 1;
 }

@@ -4,13 +4,18 @@ const resetBtn = document.querySelector(".resetBtn");
 window.onload = createGrid(16);
 
 function createGrid(num) {
+    let gridDim = 960 / num;
     for (let row = 0; row < num; row++) {
         for (let column = 0; column < num; column++) {
             let gridDiv = document.createElement('div');
             gridDiv.classList.add("grid");
+            gridDiv.style.width=`${960/num}px`;
+            gridDiv.style.height=`${960/num}px`;
             container.appendChild(gridDiv);
         }
         let gridDiv = document.createElement('div');
+        gridDiv.style.width=`${960/num}px`;
+        gridDiv.style.height=`${960/num}px`;
         gridDiv.classList.add("grid")
         container.appendChild(gridDiv);
     }
